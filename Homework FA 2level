@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+     <link rel="stylesheet" href="style7b.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="testbox">
+        <form action="#">
+            <h1>Workplace Complaint Form</h1>
+            <div class="inform">
+                <p>You Name</p>
+                <input type="text" name="fname" placeholder="First">
+                <input type="text" name="lname" placeholder="Last">
+                
+            </div>
+            <div class="inform">
+                <p>Your email</p>
+                <input type="email" name="email">
+            </div>
+            <div class="inform">
+                <p>Date of complaint</p>
+                <input type="date" name="date">
+            </div>
+            <div class="inform">
+                <p>Your department</p>
+                <select name="department">
+                    <option value="">*Please select *</option>
+                    <option value="A">Department A</option>
+                    <option value="B">Department B</option>
+                    <option value="C">Department C</option>
+                    <option value="D">Department D</option>
+                    <option value="E">Department E</option>
+                </select>
+            </div> 
+            <div class="inform"></div>
+            <p>Office manager name</p>
+            <input type="select" name="select">
+             </div>
+          
+            <div class="inform">
+                <p>The person(s) involved in this complaint are</p>
+                <textarea name="text"></textarea>
+            </div> 
+            <div class="inform">
+                <p>Note all relevant dates, places, events, etc. pertaining tothe complaint</p>
+                <textarea name="text"></textarea>
+            </div> 
+
+            <div class="inform">
+                <p>Signature</p>
+                <textarea name="text"></textarea>
+            </div> 
+            <div class="button">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+CSS
+
+
+
+*{
+    margin: 10;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: grey;
+}
+h1{ 
+    font-size: 20px;
+}
+
+input, textarea {
+    padding: 5px;
+    width: calc(100% - 10px);
+
+}
+select{
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+} 
+input, select, text{
+    margin-bottom: 5px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+
+.button{
+    margin-top: 20px;
+    text-align: center;
+
+}
+button{
+    width: 10%;
+    padding: 5px;
+    background-color: rgb(31, 121, 217);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: #5b82d7;
+}
